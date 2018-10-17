@@ -1,0 +1,68 @@
+@import "header";
+@import "youtube";
+@import "player";
+
+html, body {
+  width : 100%;
+}
+
+.loader {
+  background-size   : 150px 150px;
+  background-repeat : no-repeat;
+  background-image  : url('/images/loader.gif');
+  width             : 150px;
+  height            : 150px;
+  display           : table;
+  margin            : 0 auto;
+  margin-top        : 300px;
+}
+
+.text-ellipsis {
+  overflow      : hidden;
+  white-space   : nowrap;
+  text-overflow : ellipsis;
+}
+
+.text-center {
+  text-align : center;
+}
+
+.text-right {
+  text-align : right;
+}
+
+/* Bootstrap overrride*/
+.dropdown-menu {
+  font-size : 12px;
+  width     : calc(100% - 30px);
+  &.active {
+    color            : #000000;
+    background-color : rgba(0, 0, 0, 0);
+  }
+}
+
+.modal {
+  background-color : rgba(0, 0, 0, 0.6);
+  &.show {
+    opacity : 1;
+  }
+  .modal-header {
+    display : none;
+  }
+  .modal-footer {
+    border           : 0;
+    background-color : #000000;
+  }
+  .modal-content {
+    border           : 0;
+    background-color : #000000;
+  }
+  .modal-body {
+    padding : 0px;
+  }
+}
+
+/* Bootstrap override END */
+
+
+

@@ -1,0 +1,9 @@
+div(id='page-header')
+  nav(class='navbar navbar-default navbar-fixed-top')
+    div(class='col-md-3 hidden-md-down')
+      img(class='logo', src='/images/logo.svg')
+
+    div(class='col-md-6 hidden-md-down note')
+      select(name="countySelect" id="countrySelect" class="form-control")
+        for country in countries 
+          option(value=`${country.code}`) #{country.name}
