@@ -14,7 +14,7 @@ module.exports = {
             let plan = fs.readFileSync('./migrations/k.p5d'); //maybe
             // Also possible to make it dynamic (self-adjusting) based on perfomace of batch size / insertion time 
             let batchSize = 100; 
-            let requiredInsertions = 1000
+            let requiredInsertions = 1000000
             let count = 0
             let screen = blessed.screen({
                 autopad: true,
